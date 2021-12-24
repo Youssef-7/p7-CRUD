@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="/stylesheets/profil.css"/>
+    <title>Groupomania</title>
+    <script src="https://kit.fontawesome.com/09ac4299fa.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navBar">
+            <div class="socialTitle">
+              <h1>Groupomania</h1>
+            </div>
+            <div class="searchBar">
+              <div class="search">
+                <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+                </button>
+                <input type="text" class="searchTerm" placeholder="Rechercher">
+            </div>
+            </div>
+            <div class="userButton">
+                <button type="submit" class="profilButton">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>   
+        </div>
+      </nav>
+    </header>
+    <section id="profilTop">
+    <section id="fondProfil">
+      <div class="fondProfil">
+        <img src="https://ih1.redbubble.net/image.692961833.0267/fposter,small,wall_texture,product,750x1000.jpg">
+      </div>
+      <div class="fotoProfil">
+        <img src="https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F12.2F07.2F4cff230b-512f-4b1d-abbb-90bf253fa9f2.2Ejpeg/345x258/quality/80/crop-from/center/chuck-norris.jpeg">
+      </div>
+    </section>
+    <div class="name">
+      <h1>Chuck Norris</h1>
+    </div>
+    </section>
+    <section id="buttonModif">
+      <div>
+      <i class="far fa-edit"></i>
+      <span>Modifier le profil</span>
+      </div>
+    </section>
+    <section id="toolBar">
+      <div class="BarPublications"><span>Publiations</span></div>
+      <div ><span>A propos</span></div>
+      <div><span>Amis</span></div>
+      <div class="Photos"><span>Photos</span></div> 
+    </section>
+    <section id="statut">
+          <div class="publication">
+        <form>
+          <input name="createPost" class="createPost" placeholder="Quoi de neuf ?" type="text">
+        </form>
+        <div class="sendPics">
+          <i class="far fa-images"></i>
+        </div>
+        <div class="send">
+          <button class="sendPublication">Envoyer</button>
+        </div>
+      </div>
+    </section>
+    <section id= monProfil>
+      <div id="userInformation">
+        <div class="myPicture">
+          <div><h1>Photos</h1></div>
+          <div class="pictureList">
+            <div class="pictureShow"><img src="http://www.imcdb.org/i427377.jpg"></div>
+            <div class="pictureShow"><img src="https://media.gettyimages.com/photos/walker-texas-ranger-a-cbs-television-western-chuck-norris-january-1-picture-id1176207312"></div>
+            <div class="pictureShow"><img src="https://i.pinimg.com/originals/6a/eb/1b/6aeb1b391de374c13acaffc160ce5bb8.jpg"></div>
+          </div>
+        </div>
+        <div class="myFriend">
+          <div><h1>Mes amis</h1></div>
+          <div class="friendList">
+            <div class="friendShow"><img src="https://stock.wikimini.org/w/images/4/4d/Bob_l%27%C3%A9ponge-Personnage.jpg"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/mugenpedia/images/f/f8/200px-Patrick_Star.svg.png/revision/latest?cb=20130812201248&path-prefix=fr"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/bob-leponge/images/0/05/Squidward_stock_art.png/revision/latest/top-crop/width/360/height/450?cb=20190801142211&path-prefix=fr"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/bob-leponge/images/4/49/Bob_l%27%C3%A9ponge_Sandy.png/revision/latest/top-crop/width/360/height/450?cb=20170310013502&path-prefix=fr"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/bob-leponge/images/7/7b/Krabs_artwork.png/revision/latest?cb=20190725100918&path-prefix=fr"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://ih1.redbubble.net/image.451320542.1814/raf,750x1000,075,t,FFFFFF:97ab1c12de.u3.jpg"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/bob-leponge/images/f/f7/Bob_l%27%C3%A9ponge_Gary.png/revision/latest?cb=20170310013647&path-prefix=fr"><span>Lorem ipsum</span></div>
+            <div class="friendShow"><img src="https://static.wikia.nocookie.net/spongebob/images/0/05/Larry_the_Lobster_stock_image_standing.png/revision/latest?cb=20191104014514"><span>Lorem ipsum</span></div>
+          </div>
+        </div>
+      </div>
+      <div id="userPublication1">
+         <% for(var i = 0; i< data.length; i++) { %>
+        <div class="profilPublication">
+        <div class ="titrePublications">
+          <h1>Mes publications</h1>
+        </div>
+        <div class="flexPart2">
+        <div class="flexPart1">
+            <div class="imgProfilPublicationPart1">
+              <img src="https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F12.2F07.2F4cff230b-512f-4b1d-abbb-90bf253fa9f2.2Ejpeg/345x258/quality/80/crop-from/center/chuck-norris.jpeg">
+            </div>
+          <div class="profilPublicationPart1">
+            <h1>Chuck Norris</h1>
+            <p>07/11/2021</p>
+          </div>
+        </div>
+          <div class="profilPublicationPart2">
+            <div><a class="btn btn-danger delete" onclick="return alert('Are You sure?')" href="../books/delete/<%=data[i].id%>">Delete</a>  </div>
+          </div>
+        </div>
+        <div class="profilPublicationPost">
+            <h1><%= data[i].name%></h1>
+            <p><%= data[i].author%></p>
+          <div class="profilPublicationPostImg">
+            <img src="http://www.imcdb.org/i427377.jpg">
+          </div>
+          <div class="profilPublicationPostInter">
+            <div class="profilPublicationPostInterDivLike">
+              <div><i class="far fa-thumbs-up"></i></div>
+              <p>J'aime</p>
+            </div>
+            <div class="profilPublicationPostInterDivCom">
+              <div><i class="far fa-comment-dots"></i></div>
+              <p>Commenter</p>
+            </div>
+          </div>
+          <div class="commentZone">
+            <div class="imgProfilPublicationPart1">
+              <img src="https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F12.2F07.2F4cff230b-512f-4b1d-abbb-90bf253fa9f2.2Ejpeg/345x258/quality/80/crop-from/center/chuck-norris.jpeg">
+            </div>
+            <form>
+              <input name="createPost" class="createPost" placeholder="Ecrivez un commentaire..." type="text">
+            </form>
+          </div>
+        </div>
+        </div>
+        <% } %>
+      </div>
+    </section>
+
+    <footer>
+    </footer>
+  </body>
+
+</html>
